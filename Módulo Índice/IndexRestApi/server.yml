@@ -1,0 +1,27 @@
+# Variables de configuracion
+
+# Configuracion del servidor donde se encuentran los posts (CoreRestApi)
+restApiIp: 127.0.0.1
+restApiPort: 8000
+restApiMethod: api/posts/
+
+# Nombre del campo donde se almacena la ruta de los posts en el json
+jsonPathField: path
+
+# Nombre del resto de campos (con sus pesos) que se van a usar para indexar
+# El valor de los pesos se normaliza por tanto se puede poner cualquier valor 
+indexFields:
+  - field: title
+    weight: 0.2
+  - field: content
+    weight: 0.4
+  - field: categories
+    weight: 0.4
+
+server:
+  applicationConnectors:
+  - type: http 
+    port: 5000
+  adminConnectors:
+  - type: http
+    port: 5001

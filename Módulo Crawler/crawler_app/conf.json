@@ -1,0 +1,13 @@
+{
+  "allowed_domain_to_crawl" : "localhost",
+  "start_url_to_crawl" : "http://localhost/wordpress/",
+
+  "rest_api_host" : "http://127.0.0.1:8000/",
+  "rest_api_create_post_method" : "/api/posts/",
+  "rest_api_remove_post_method" : "/api/posts/remove/",
+  "rest_api_create_index" : "/api/index/create",
+
+  "author_full_xpath": "/html/body/div[1]/div[2]/div/main/article/header/div[1]/span/span/a",
+  "category_full_path": "/html/body/div[1]/div[2]/div/main/article/footer/span[1]/a",
+  "time_full_xpath": "/html/body/div[1]/div[2]/div/main/article/header/div[2]/span/a/time[1]"
+}
